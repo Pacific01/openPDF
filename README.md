@@ -3,7 +3,7 @@ OpenPDF v2.0
 
 Herramienta para generar estadísticas de encuestas en formato *PDF*.
 
-Este proyecto continúa el trabajo un quatrimestre anterior para la asignatura *SLDS* (*FIB*, *UPC*). 
+Este proyecto continúa el trabajo de un quatrimestre anterior para la asignatura *SLDS* (*FIB*, *UPC*). 
 
 Índice
 ======
