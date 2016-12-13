@@ -183,6 +183,7 @@ TODO
 ====
 - Pedir los parámetros de configuración (plantilla *pdf*, carpeta respuestas, etc...) de forma interactiva.
 - Control de errores: *OpenPDF* asume que todos los *pdf* que va a tratar cumplen las restricciones anteriormente mencionadas. Si un usuario no contesta una pregunta, por ejemplo, la salida del programa será indeterminada.
+- Unificar los dos scripts en uno, y distribuirlos -publicar en *Python Package Index* ([*PyPI*](https://pip.pypa.io/en/stable/)).
 
 
 Licencia
