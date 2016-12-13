@@ -43,8 +43,8 @@ Por la localización del *highlight* de la respuesta dentro de la página.
 Para ello es necesario proporcionar una copia modificada de la encuesta *pdf* con todas las preguntas y respuestas seleccionadas. El color del resaltado se utilizará para distinguir preguntas de respuestas. 
 
 #### PDFs de ejemplo
-- Una [simple encuesta](https://github.com/Pacific01/openPDF/blob/development/Preguntas/SLDS_Project_Questions-raw.pdf), y la [plantilla con preguntas y respuestas marcadas](https://github.com/Pacific01/openPDF/blob/development/Preguntas/SLDS_Project_Questions.pdf).
-- Puedes ver diferentes respuestas a la encuesta en la carpeta [Respuestas](https://github.com/Pacific01/openPDF/blob/development/Respuestas).
+- Una [simple encuesta](https://github.com/Pacific01/openPDF/blob/master/Preguntas/SLDS_Project_Questions-raw.pdf), y la [plantilla con preguntas y respuestas marcadas](https://github.com/Pacific01/openPDF/blob/master/Preguntas/SLDS_Project_Questions.pdf).
+- Puedes ver diferentes respuestas a la encuesta en la carpeta [Respuestas](https://github.com/Pacific01/openPDF/blob/master/Respuestas).
 
 #### ¿Cómo proporciona *OpenPDF* los resultados?
 Tras procesar las encuestas, el programa genera dos ficheros *.json*  -uno contiene datos acerca de las preguntas, y el otro de las respuestas. Su estructura general es la siguiente:
@@ -139,7 +139,7 @@ Típicamente querrás analizar los resultados de tus propias encuestas. Para ell
 
 #### Crear el *pdf* de la encuesta
 
-Este paso es especialmente delicado ya que este *pdf* necesita tener una estructura muy concreta. En particular, el texto de cada pUtilizar Adobe Reader garantiza que la restriccion del highlight se cumpleregunta y cada respuesta debe encontrarse en un *PDFObject* de tipo *LTTextBoxHorizontal*. Crear el *pdf* con [latex](https://www.latex-project.org/) y una plantilla parecida a [esta](https://github.com/Pacific01/openPDF/blob/development/Samples/main.tex) garantiza que dicha restricción se cumplirá.
+Este paso es especialmente delicado ya que este *pdf* necesita tener una estructura muy concreta. En particular, el texto de cada pUtilizar Adobe Reader garantiza que la restriccion del highlight se cumpleregunta y cada respuesta debe encontrarse en un *PDFObject* de tipo *LTTextBoxHorizontal*. Crear el *pdf* con [latex](https://www.latex-project.org/) y una plantilla parecida a [esta](https://github.com/Pacific01/openPDF/blob/master/Samples/main.tex) garantiza que dicha restricción se cumplirá.
 
 #### Resaltar las preguntas y las respuestas
 
@@ -155,7 +155,7 @@ pdf = pdfquery.PDFQuery(QUESTIONS_FILE)
 pdf.load()
 pdf.tree.write("test.xml", pretty_print=True, encoding="utf-8")
 ```
-Si el `test.xml` tiene una estructura similar a [esta](https://github.com/Pacific01/openPDF/blob/development/Samples/test.xml), es que tiene el formato aceptado.
+Si el `test.xml` tiene una estructura similar a [esta](https://github.com/Pacific01/openPDF/blob/master/Samples/test.xml), es que tiene el formato aceptado.
 
 #### Configurar el script *main.py*
 Para hacer su trabajo, *OpenPDF* sólo necesita saber cuál es la plantilla de preguntas-respuestas, y el directorio donde buscar los *pdf* con las respuestas. Abre el fichero *main.py* con un editor de texto cualquiera, y modifica las siguientes constantes para especificar tus propias encuestas:
